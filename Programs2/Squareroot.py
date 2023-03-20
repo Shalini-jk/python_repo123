@@ -1,3 +1,5 @@
-import math
-a = int(input("enter a number whose square root u needed \n"))
-print(math.sqrt(a))
+
+a = int(input("enter a number whose square root You needed \n"))
+b = 1/2;
+c = (a ** b)
+print (c)
