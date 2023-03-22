@@ -4,6 +4,7 @@ print("The elements of array after reversing ",arr)
 
 # now we can do it by swapping the number between the two index
 n = len(arr)
+print("Total number of element present in array : \n", n)
 start = arr[0]
 end = n- 1
 while start < end:
