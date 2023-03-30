@@ -1,18 +1,31 @@
 # queue works on first in first out principle(fifo)
 
-queue = []
+class Queue:
+    def __init__( self ):
+        self. items = []
 
-queue.append(3)
-queue.append(4)
-queue.append(5)
-queue.append(6)
-queue.append(7)
-queue.append(8)
-queue.append(9)
- 
-print(queue)
- 
-print(queue.pop(0))
-print(queue.pop(0))
- 
-print(queue)
+    def isEmpty (self):
+        return self. items == []
+
+    def enqueue (self, item):
+        self. items. insert ( 0, item )
+
+    def dequeue (self):
+        return self. items. pop()
+
+    def size (self):
+        return len (self.items)
+    
+q=Queue ()
+q.isEmpty ()
+q.enqueue ("animals")
+q.enqueue ("dog")
+q.enqueue ("Elephant")
+q.enqueue ("Rabbit")
+q.enqueue ("Deer")
+q.enqueue ("Snake")
+
+print ("The size of the Queue Before deleting item from Queue :  ", q.size())
+q. dequeue()
+print ("The size of the Queue after deleting one item from Queue :   ", q.size())
+
